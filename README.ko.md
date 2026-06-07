@@ -43,34 +43,36 @@ GameFrameX의 YooAsset 알리페이 미니게임 런타임 컴포넌트입니다
 
 ### 설치
 
-Unity 프로젝트의 `Packages/manifest.json`을 편집하여 `scopedRegistries` 섹션을 추가하세요:
+다음 방법 중 하나를 선택하세요:
 
-```json
-{
-  "scopedRegistries": [
-    {
-      "name": "GameFrameX",
-      "url": "https://gameframex.upm.alianblank.uk",
-      "scopes": [
-        "com.gameframex"
-      ]
-    }
-  ]
-}
-```
+1. Unity 프로젝트의 `Packages/manifest.json`을 편집하여 `scopedRegistries` 섹션을 추가하세요:
+   ```json
+   {
+     "scopedRegistries": [
+       {
+         "name": "GameFrameX",
+         "url": "https://gameframex.upm.alianblank.uk",
+         "scopes": [
+           "com.gameframex"
+         ]
+       }
+     ],
+     "dependencies": {
+       "com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "1.0.0"
+     }
+   }
+   ```
 
-`scopes`는 이 레지스트리를 통해 어떤 패키지를 해석할지 제어합니다. `com.gameframex`로 시작하는 패키지만 이 레지스트리에서 가져옵니다.
+   `scopes`는 이 레지스트리를 통해 어떤 패키지를 해석할지 제어합니다. `com.gameframex`로 시작하는 패키지만 이 레지스트리에서 가져옵니다.
 
-Then add the package to `dependencies`:
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "1.0.0"
-  }
-}
-```
-
+2. `manifest.json`의 `dependencies`에 직접 추가:
+   ```json
+   {
+      "com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git"
+   }
+   ```
+3. Unity의 **Package Manager**에서 **Git URL**을 사용하여 추가: `https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git`
+4. 리포지토리를 Unity 프로젝트의 `Packages` 디렉토리에 클론하세요. 자동으로 로드됩니다.
 ## 문서 및 자료
 
 - [공식 문서](https://gameframex.doc.alianblank.com)
