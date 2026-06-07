@@ -71,7 +71,6 @@ Then add the package to `dependencies`:
 }
 ```
 
-
 ## ドキュメントとリソース
 
 - [公式ドキュメント](https://gameframex.doc.alianblank.com)
@@ -86,4 +85,4 @@ Then add the package to `dependencies`:
 
 ## ライセンス
 
-このプロジェクトは MIT ライセンスの下で公開されています - 詳細は [LICENSE](https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/blob/main/LICENSE) ファイルをご覧ください。
+詳しくは [LICENSE.md](LICENSE.md) をご参照ください。
