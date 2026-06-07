@@ -41,23 +41,36 @@ GameFrameX YooAsset MiniGame Alipay runtime component for Unity WebGL platform. 
 
 ## Quick Start
 
-### Installation (choose one)
+### Installation
 
-1. Add the following to the `dependencies` section of your `manifest.json`:
-   ```json
-   {"com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git"}
-   ```
+Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
 
-2. In Unity's Package Manager, use `Git URL` to add the package: https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-3. Download the repository and place it in your Unity project's `Packages` directory. It will be loaded automatically.
+`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
 
-### Usage
+Then add the package to `dependencies`:
 
-1. Ensure Alipay Mini Game SDK is integrated and `ALIPAYMINIGAME` macro is enabled
-2. Use `AlipayFileSystemCreater.CreateFileSystemParameters(...)` to generate file system parameters
-3. Pass the parameters to YooAsset's file system creation workflow
-4. Follow YooAsset's standard workflow for initialization, version requests, manifest loading, and asset loading
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "1.0.0"
+  }
+}
+```
+
 
 ## Documentation & Resources
 

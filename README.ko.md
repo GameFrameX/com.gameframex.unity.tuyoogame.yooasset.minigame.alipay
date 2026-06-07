@@ -41,23 +41,36 @@ GameFrameX의 YooAsset 알리페이 미니게임 런타임 컴포넌트입니다
 
 ## 빠른 시작
 
-### 설치 (선택)
+### 설치
 
-1. `manifest.json`의 `dependencies` 섹션에 다음을 추가:
-   ```json
-   {"com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git"}
-   ```
+Unity 프로젝트의 `Packages/manifest.json`을 편집하여 `scopedRegistries` 섹션을 추가하세요:
 
-2. Unity의 Package Manager에서 `Git URL`을 사용하여 패키지 추가: https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay.git
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-3. 리포지토리를 다운로드하여 Unity 프로젝트의 `Packages` 디렉토리에 배치.
+`scopes`는 이 레지스트리를 통해 어떤 패키지를 해석할지 제어합니다. `com.gameframex`로 시작하는 패키지만 이 레지스트리에서 가져옵니다.
 
-### 사용 방법
+Then add the package to `dependencies`:
 
-1. 알리페이 미니게임 SDK가 통합되어 있고 `ALIPAYMINIGAME` 매크로가 활성화되어 있는지 확인
-2. `AlipayFileSystemCreater.CreateFileSystemParameters(...)`로 파일 시스템 매개변수 생성
-3. 매개변수를 YooAsset의 파일 시스템 생성 흐름에 전달
-4. YooAsset의 표준 흐름에 따라 초기화, 버전 요청, 매니페스트 로딩 및 에셋 로딩 수행
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.tuyoogame.yooasset.minigame.alipay": "1.0.0"
+  }
+}
+```
+
 
 ## 문서 및 자료
 
