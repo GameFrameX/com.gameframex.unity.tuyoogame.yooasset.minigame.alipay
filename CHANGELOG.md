@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/compare/1.0.0...1.0.1) (2026-06-07)
+
+
+### Bug Fixes
+
+* 统一 LICENSE.md 为 Apache 2.0 标准完整文本 ([8b3c743](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/commit/8b3c74320d80edc33ae2fd72c2e43c0543b151ac))
+* 补全包规范文件（LICENSE/CHANGELOG/URL 字段/unity 字段） ([843e6e7](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/commit/843e6e783addff15627f3745e25fe986e0790c16))
+
 # 1.0.0 (2026-03-05)
 
 
