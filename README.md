@@ -83,6 +83,12 @@ Then add the package to `dependencies`:
 
 See [Releases](https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/releases) for changelog.
 
+
+## Dependencies
+
+| Package | Description |
+|---------|-------------|
+| `com.gameframex.unity.tuyoogame.yooasset` | 1.0.0 |
 ## License
 
 See [LICENSE.md](LICENSE.md) for license information.
