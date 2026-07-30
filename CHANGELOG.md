@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/compare/1.0.1...1.0.2) (2026-07-30)
+
+
+### Bug Fixes
+
+* 更新依赖项 com.gameframex.unity.tuyoogame.yooasset 至 2.9.4 ([46b99df](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/commit/46b99df39b510bc5c45e2277aed96583e4f16ae7))
+
 ## [1.0.1](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.alipay/compare/1.0.0...1.0.1) (2026-06-07)
 
 
